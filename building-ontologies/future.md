@@ -163,8 +163,9 @@ However it does not solve the problem of editing complex OWL axioms.
 The heart of this problem is blank nodes.
 Two representations of the same RDF graph
 will have their blank nodes labelled differently,
-and finding a mapping between the blank nodes is NP-hard --
-essentially the same as the travelling salesman problem.
+and finding a mapping between the blank nodes
+is a variation on the labelled graph isomorphism problem,
+which does not have a known general solution in polynomial time.
 
 While RDFTab uses a "thin triples" approach,
 where each triple is represented by a single row in the table,
